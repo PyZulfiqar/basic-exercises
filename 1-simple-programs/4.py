@@ -3,7 +3,6 @@ def get_number(index):
     try:
         return int(input(f"Please enter number {index}: "))
     except ValueError:
-        os.system('cls' if os.name == 'nt' else 'clear')
         return get_number(index)
 
 def calc_avg(a, b, c):
