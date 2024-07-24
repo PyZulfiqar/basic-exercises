@@ -27,7 +27,7 @@ def main():
     area = solve_area(width, lenght)
     perimeter = solve_perimeter(width, lenght)
     
-    print(f"Width={width} and lenght={lenght}\n")
+    print(f"\nWidth={width} and lenght={lenght}")
     print(f"Area: {area}\nPerimeter: {perimeter}")
 
 if __name__ == "__main__":
