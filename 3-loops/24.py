@@ -21,6 +21,12 @@ def main():
     x = get_number("first")
     y = get_number("second")
 
+    if x < 0:
+        x = x * -1
+    if y < 0:
+        y = y * -1
+
+
     if x <= y:
         find_cd(x, y)
     else:
