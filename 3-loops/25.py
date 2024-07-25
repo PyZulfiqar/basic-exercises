@@ -8,13 +8,13 @@ def get_number(value):
         return get_number(value)
 
 
-def find_cd(a, b):
+def find_lcm(a, b):
 
     # a is considered smaller than be in the function
-    for i in range(1, a + 1):
-        if a % i == 0 and b % i == 0:
-            print(f"lowest Commont Divisor: {i}")
-            break
+    i = a
+    while(i % b != 0):
+        i = i + a
+    return i
 
 
 def main():
@@ -28,9 +28,11 @@ def main():
         y = y * -1
 
     if x <= y:
-        find_cd(x, y)
+        lcm = find_lcm(x, y)
     else:
-        find_cd(y, x)
+        lcm = find_lcm(y, x)
+    
+    print(lcm)
 
 if __name__ == "__main__":
     main()
