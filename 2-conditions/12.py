@@ -33,13 +33,13 @@ def main():
     print(f"Quadratic Equation: {a}*x**2 + {b}*x + {c}")
 
     delta = calc_delta(a, b, c)
-    print(delta)
+    #print(delta)
     if delta > 0:
-        print("Equation have 2 answers!")
+        print("Equation has 2 answers!")
         print(f"root_1= {solve_equ(a, b, delta, '+')}")
         print(f"root_2= {solve_equ(a, b, delta, '-')}")
     elif delta == 0:
-        print("Equation have 1 answer!")
+        print("Equation has 1 answer!")
         print(f"root= {solve_equ(a, b, delta, '+')}")
     else:
         print("Equation doesn't have any answers!")
