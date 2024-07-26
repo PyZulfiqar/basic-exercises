@@ -1,10 +1,10 @@
-sum = 0
+mult = 0
 for i in range(100):
     while True:
         try:
-            sum += float(input(f"Enter number {i + 1}: "))
+            mult *= float(input(f"Enter number {i + 1}: "))
             break
         except ValueError:
            print("That's not a number, Try again.")
            continue 
-print(sum)
+print(mult)
