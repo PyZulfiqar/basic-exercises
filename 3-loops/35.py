@@ -25,7 +25,7 @@ def check_max_avg(max_avg, new_avg):
 def main():
 
     max_avg = 0
-    for i in range(1, 6):
+    for i in range(1, 101):
         new_avg = get_avg_grade(i)
         max_avg = check_max_avg(max_avg, new_avg) 
 
