@@ -7,7 +7,7 @@ def solve(x, i, s, t):
         t -= (x ** i) / factorial(i)
         s = True
     
-    if (x ** (i + 1)) / factorial(i + 1) < 0.0001:
+    if abs((x ** (i + 1)) / factorial(i + 1)) < 0.0001:
         return t
     else:
         i += 2
