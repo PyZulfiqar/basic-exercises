@@ -13,7 +13,10 @@ def solve(x, i, t):
 
 def get_x():
     try:
-        x = float(input("Please Enter x:"))
+        x = float(input("Please Enter a decimal number:"))
+        if abs(x) > 1:
+            print("Please enter a number between -1 and +1, Try again.")
+            return get_x()
         return x
     except ValueError:
         print("That's not a number, Please try again:")
