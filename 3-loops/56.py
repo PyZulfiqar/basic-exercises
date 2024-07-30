@@ -23,7 +23,9 @@ def get_number(v):
                     return get_number(v)
                 else:
                     return n
- 
+    except ValueError:
+            print(f"{ansii['red']}Invalid input, Try again.{ansii['reset']}")
+            return get_number(v)
 
 def main():
     
